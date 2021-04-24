@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Typescript</title>
+    <script src="node_modules/systemjs/dist/system.js" />
+    <!-- <script src="app.js"></script> -->
+</head>
+
+<body>
+    <script>
+        SystemJS.config({
+            baseURL: '/',
+            packages: {
+                '/': {
+                    defaultExtension: 'js'
+                }
+            }
+        });
+        SystemJS.import('./app.js')
+    </script>
+</body>
+
+</html>
